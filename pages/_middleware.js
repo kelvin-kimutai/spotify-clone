@@ -13,6 +13,6 @@ export async function middleware(req) {
   }
 
   if (!token && pathname !== '/login') {
-    return NextResponse.redirect('http://localhost:3000/login')
+    return NextResponse.redirect('/login')
   }
 }

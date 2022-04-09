@@ -14,7 +14,7 @@ export async function middleware(req) {
 
   if (!token && pathname !== '/login') {
     return NextResponse.redirect(
-      'https://spotify-clone-kelvin.vercel.app/login'
+      'https://spotify-clone-kelvin.herokuapp.com/login'
     )
   }
 }
